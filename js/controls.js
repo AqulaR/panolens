@@ -136,7 +136,7 @@ const viewer = new PANOLENS.Viewer({
 });
 
 // Связь в коридоре
-rim1.link(rim1, SpotPositions[0]);
+rim1.link(rim2, SpotPositions[0]);
 rim1.link(rim2, Colosseum_SpotPos[0]);
 
 rim2.link(rim1, Colosseum_SpotPos[1]);
