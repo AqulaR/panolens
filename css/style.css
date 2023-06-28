@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 63.5%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 1rem 5%;
+}
+
+.header__logo {
+    font-size: 1.7rem;
+}
+
+.header .nav__bar a {
+    font-size: 20px;
+}
+
+.burger-btn__header {
+    display: none;
+    align-items: center;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.burger-btn__header span,
+.burger-btn__header::before,
+.burger-btn__header::after {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.burger-btn__header span {
+    top: 8px;
+}
+
+.burger-btn__header::before {
+    content: '';
+    top: 0px;
+}
+
+.burger-btn__header::after {
+    content: '';
+    top: 16px;
+}
+
+.ModalWindow {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ModalWindow.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 80vh;
+    background-color: #333;
+    transition: all 1s ease;
+    border-radius: .3rem;
+}
+
+.home {
+    display: flex;
+    min-height: 100vh;
+}
+
+.panorama__container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    cursor: grab;
+}
